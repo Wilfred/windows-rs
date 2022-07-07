@@ -1,5 +1,4 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
-#[link(name = "windows")]
 extern "system" {}
 pub type D2D1_ALPHA_MODE = u32;
 pub const D2D1_ALPHA_MODE_UNKNOWN: D2D1_ALPHA_MODE = 0u32;

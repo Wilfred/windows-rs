@@ -3,7 +3,6 @@
 pub mod LicenseManagement;
 #[cfg(feature = "ApplicationModel_Store_Preview")]
 pub mod Preview;
-#[link(name = "windows")]
 extern "system" {}
 #[repr(transparent)]
 pub struct FulfillmentResult(pub i32);

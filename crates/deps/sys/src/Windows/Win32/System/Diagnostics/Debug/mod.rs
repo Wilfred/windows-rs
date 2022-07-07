@@ -1,7 +1,6 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
 #[cfg(feature = "Win32_System_Diagnostics_Debug_WebApp")]
 pub mod WebApp;
-#[link(name = "windows")]
 extern "system" {
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
     pub fn AddVectoredContinueHandler(first: u32, handler: ::core::option::Option<PVECTORED_EXCEPTION_HANDLER>) -> *mut ::core::ffi::c_void;

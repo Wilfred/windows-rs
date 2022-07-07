@@ -3,7 +3,6 @@
 pub mod Dxc;
 #[cfg(feature = "Win32_Graphics_Direct3D_Fxc")]
 pub mod Fxc;
-#[link(name = "windows")]
 extern "system" {}
 #[repr(C)]
 pub struct D3DMATRIX {

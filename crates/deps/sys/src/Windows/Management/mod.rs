@@ -9,7 +9,6 @@ pub mod Policies;
 pub mod Update;
 #[cfg(feature = "Management_Workplace")]
 pub mod Workplace;
-#[link(name = "windows")]
 extern "system" {}
 pub type MdmAlert = *mut ::core::ffi::c_void;
 #[repr(transparent)]

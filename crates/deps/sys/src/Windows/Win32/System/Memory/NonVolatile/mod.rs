@@ -1,5 +1,4 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
-#[link(name = "windows")]
 extern "system" {
     #[cfg(any(target_arch = "x86_64", target_arch = "aarch64",))]
     pub fn RtlDrainNonVolatileFlush(nvtoken: *const ::core::ffi::c_void) -> u32;

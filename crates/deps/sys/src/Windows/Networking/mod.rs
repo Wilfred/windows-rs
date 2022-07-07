@@ -17,7 +17,6 @@ pub mod Sockets;
 pub mod Vpn;
 #[cfg(feature = "Networking_XboxLive")]
 pub mod XboxLive;
-#[link(name = "windows")]
 extern "system" {}
 #[repr(transparent)]
 pub struct DomainNameType(pub i32);

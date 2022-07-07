@@ -1,7 +1,6 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
 #[cfg(feature = "Win32_Storage_Xps_Printing")]
 pub mod Printing;
-#[link(name = "windows")]
 extern "system" {
     #[cfg(feature = "Win32_Graphics_Gdi")]
     pub fn AbortDoc(hdc: super::super::Graphics::Gdi::HDC) -> i32;

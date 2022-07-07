@@ -1,5 +1,4 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
-#[link(name = "windows")]
 extern "system" {
     #[cfg(feature = "Win32_Foundation")]
     pub fn DirectInput8Create(hinst: super::super::Foundation::HINSTANCE, dwversion: u32, riidltf: *const ::windows_sys::core::GUID, ppvout: *mut *mut ::core::ffi::c_void, punkouter: ::windows_sys::core::IUnknown) -> ::windows_sys::core::HRESULT;

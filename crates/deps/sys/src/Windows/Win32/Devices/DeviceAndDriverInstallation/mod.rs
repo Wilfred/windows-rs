@@ -1,5 +1,4 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
-#[link(name = "windows")]
 extern "system" {
     pub fn CMP_WaitNoPendingInstallEvents(dwtimeout: u32) -> u32;
     #[cfg(feature = "Win32_Data_HtmlHelp")]

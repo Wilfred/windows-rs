@@ -1,5 +1,4 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
-#[link(name = "windows")]
 extern "system" {
     pub fn AcquireSRWLockExclusive(srwlock: *mut RTL_SRWLOCK);
     pub fn AcquireSRWLockShared(srwlock: *mut RTL_SRWLOCK);

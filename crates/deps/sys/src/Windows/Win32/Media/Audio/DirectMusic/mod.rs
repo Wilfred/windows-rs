@@ -1,5 +1,4 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
-#[link(name = "windows")]
 extern "system" {}
 pub const CLSID_DirectMusic: ::windows_sys::core::GUID = ::windows_sys::core::GUID { data1: 1667997456, data2: 3197, data3: 4561, data4: [149, 178, 0, 32, 175, 220, 116, 33] };
 pub const CLSID_DirectMusicCollection: ::windows_sys::core::GUID = ::windows_sys::core::GUID { data1: 1209005232, data2: 10418, data3: 4561, data4: [190, 247, 0, 192, 79, 191, 143, 239] };

@@ -1,7 +1,6 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
 #[cfg(feature = "Win32_Media_DirectShow_Xml")]
 pub mod Xml;
-#[link(name = "windows")]
 extern "system" {
     #[cfg(feature = "Win32_Foundation")]
     pub fn AMGetErrorTextA(hr: ::windows_sys::core::HRESULT, pbuffer: super::super::Foundation::PSTR, maxlen: u32) -> u32;

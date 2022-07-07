@@ -1,5 +1,4 @@
 #![allow(non_snake_case, non_camel_case_types, non_upper_case_globals, clashing_extern_declarations, clippy::all)]
-#[link(name = "windows")]
 extern "system" {
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Authorization_UI"))]
     pub fn DSCreateISecurityInfoObject(pwszobjectpath: super::super::Foundation::PWSTR, pwszobjectclass: super::super::Foundation::PWSTR, dwflags: u32, ppsi: *mut super::Authorization::UI::ISecurityInformation, pfnreadsd: ::core::option::Option<PFNREADOBJECTSECURITY>, pfnwritesd: ::core::option::Option<PFNWRITEOBJECTSECURITY>, lpcontext: super::super::Foundation::LPARAM) -> ::windows_sys::core::HRESULT;

@@ -3,6 +3,5 @@
 pub mod Core;
 #[cfg(feature = "ApplicationModel_Resources_Management")]
 pub mod Management;
-#[link(name = "windows")]
 extern "system" {}
 pub type ResourceLoader = *mut ::core::ffi::c_void;
